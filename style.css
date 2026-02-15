@@ -65,6 +65,9 @@ body {
     padding: 8px;
     border-right: 1px dashed #ccc;
     border-bottom: 1px dashed #ccc;
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color */
+    cursor: pointer;
 }
 
 /* Remove right border for the second column */
@@ -75,6 +78,10 @@ body {
 /* Remove bottom border for the last two items */
 .grid-item:nth-last-child(-n+2) {
     border-bottom: none;
+}
+
+.grid-item:hover {
+    background-color: #f9f9f9; /* Subtle hover effect */
 }
 
 .grid-item img {
